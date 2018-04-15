@@ -1,6 +1,20 @@
 const express = require('express')
-const app = express()
+var bodyParser = require('body-parser');
+const app = express();
+const request = require('request');
+var Promise = require('promise');
+app.use(bodyParser.json());
 
-app.get('/', (req, res) => res.send('Hello World!'))
+var http = require('http');
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.get('/', (req, res) => {
+console.log("Test Nodejs");
+res.send('Test Nodejs');
+})
+
+
+var httpServer = http.createServer(app);
+
+httpServer.listen(80, () =>{
+	console.log("http is listening on 3000");
+});
