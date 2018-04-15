@@ -5,6 +5,9 @@ pipeline {
             steps {
                 sh 'npm --version'
             }
+			steps {
+                sh 'echo "sucess"'
+            }
         }
     }
 }
