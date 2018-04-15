@@ -8,7 +8,7 @@ pipeline {
 				sh 'pwd'
 				sh 'sudo scp -i /opt/key1 -o StrictHostKeyChecking=no -r * ubuntu@54.89.195.179:/tmp'
 				sh 'sudo ssh -i /opt/key1 -o StrictHostKeyChecking=no ubuntu@54.89.195.179'
-				sh 'sudo mkdir /tmp/tr1'
+				sh 'ls'
 		     }
         }
     }
