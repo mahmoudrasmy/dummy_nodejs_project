@@ -1,1 +1,1 @@
-sudo mkdir /opt/newinstance
+sudo mkdir /opt/newinstanc
