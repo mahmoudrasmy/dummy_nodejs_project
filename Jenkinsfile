@@ -6,7 +6,7 @@ pipeline {
 			    sh 'npm --version'
                 sh 'echo "hello 2"'
 				sh 'pwd'
-				sh 'sudo scp -i /opt/key -o StrictHostKeyChecking=no -r * ubuntu@54.89.195.179:/opt/to_deploy'
+				sh 'sudo scp -i /opt/key1 -o StrictHostKeyChecking=no -r * ubuntu@54.89.195.179:/tmp'
 		     }
         }
     }
